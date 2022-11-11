@@ -9,19 +9,20 @@
         <script src="TweenMax.min.js"></script>
     </head>
     <body>
+        <h2 style="text-align: center;">Hội Anh Em</h2>
         <br>
         <div align="center">
 
             <textarea id="names" style="font-size: 20px;"  rows="10" cols="50" ></textarea><br> <br>
-            <button class="btn" onClick="createWheel()">Quay</button>
-            <button class="btn" onClick="sort()">Sắp xếp</button>
+            <button class="btn" style="height: 100px;" onClick="createWheel()">Quay</button>
+            <button class="btn" style="height: 100px;" onClick="sort()">Sắp xếp</button>
         </div>
         <div align="center">
             <table cellpadding="0" cellspacing="0" border="0">
                 <tr>
                     <td>
-                        <button id="spin_start" class="btn" onClick="startSpin();">Quay ngay</button> <br><br>
-                        <button id="spin_reset" class="btn" onClick="resetWheel();">Quay lại</button>
+                        <button id="spin_start" style="height: 100px;" class="btn" onClick="startSpin();">Quay ngay</button> <br><br>
+                        <button id="spin_reset" style="height: 100px;" class="btn" onClick="resetWheel();">Quay lại</button>
                     </td>
                     <td width="438" height="582" class="the_wheel" align="center" valign="center">
                         <canvas id="canvas" width="434" height="434">
@@ -34,7 +35,6 @@
         <script>
             function sort(){
                 arr_name = shuffle(arr_name);
-                console.log(arr_name)
                 _resetWheel();
             }
             function shuffle(array) {
